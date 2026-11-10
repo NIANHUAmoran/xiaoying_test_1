@@ -1,0 +1,41 @@
+{
+  "source_output": "live-missing.output.json",
+  "request_id": "missing-001",
+  "mode": "live",
+  "model": "qwen3.8-max",
+  "generated_at": "2026-11-10T16:10:10.644587+00:00",
+  "trace": [
+    {
+      "material_id": "M02",
+      "steps": [
+        {
+          "step": 1,
+          "action": "read_material",
+          "arguments": {},
+          "basis": "Material has not been read",
+          "observation": {
+            "ok": true,
+            "material": {
+              "title": "待补授权信息",
+              "tags": []
+            },
+            "missing": [
+              "owner"
+            ]
+          },
+          "next_action": "finish"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "arguments": {},
+          "basis": "Material is missing required owner metadata",
+          "observation": {
+            "finished": true
+          },
+          "next_action": null
+        }
+      ]
+    }
+  ]
+}

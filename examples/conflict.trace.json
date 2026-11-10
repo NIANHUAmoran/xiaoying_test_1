@@ -1,0 +1,96 @@
+{
+  "source_output": "conflict.output.json",
+  "request_id": "conflict-001",
+  "mode": "mock",
+  "model": "offline-mock",
+  "generated_at": "2026-11-10T16:29:40.230183+00:00",
+  "trace": [
+    {
+      "material_id": "M01",
+      "steps": [
+        {
+          "step": 1,
+          "action": "read_material",
+          "arguments": {},
+          "basis": "先读取素材",
+          "observation": {
+            "ok": true,
+            "material": {
+              "title": "新品剪辑",
+              "owner": "content-team",
+              "tags": []
+            },
+            "missing": []
+          },
+          "next_action": "check_rules"
+        },
+        {
+          "step": 2,
+          "action": "check_rules",
+          "arguments": {},
+          "basis": "素材完整，检查审核规则",
+          "observation": {
+            "ok": true,
+            "risks": [],
+            "passed": true
+          },
+          "next_action": "query_slots"
+        },
+        {
+          "step": 3,
+          "action": "query_slots",
+          "arguments": {},
+          "basis": "查询当前可用时段",
+          "observation": {
+            "ok": true,
+            "slots": [
+              {
+                "slot": "2026-11-11T18:00:00+08:00",
+                "available": false
+              },
+              {
+                "slot": "2026-11-11T19:00:00+08:00",
+                "available": true
+              },
+              {
+                "slot": "2026-11-11T20:00:00+08:00",
+                "available": true
+              }
+            ]
+          },
+          "next_action": "save_draft"
+        },
+        {
+          "step": 4,
+          "action": "save_draft",
+          "arguments": {
+            "slot": "2026-11-11T19:00:00+08:00"
+          },
+          "basis": "保存可用时段建议；硬性要求变化仍需确认",
+          "observation": {
+            "ok": true,
+            "duplicate": false,
+            "updated": false,
+            "draft_id": "draft-fa8942d32dd56301fb93",
+            "material_id": "M01",
+            "requested_slot": "2026-11-11T18:00:00+08:00",
+            "suggested_slot": "2026-11-11T19:00:00+08:00",
+            "confirmed": false,
+            "published": false
+          },
+          "next_action": "finish"
+        },
+        {
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "basis": "按保存工具返回的实际结果结束",
+          "observation": {
+            "finished": true
+          },
+          "next_action": null
+        }
+      ]
+    }
+  ]
+}

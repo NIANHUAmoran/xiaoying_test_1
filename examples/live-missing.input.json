@@ -1,0 +1,9 @@
+{
+  "request_id": "missing-001",
+  "items": [
+    {
+      "material_id": "M02",
+      "requested_slot": "2026-11-11T19:00:00+08:00"
+    }
+  ]
+}

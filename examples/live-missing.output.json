@@ -1,0 +1,66 @@
+{
+  "request_id": "missing-001",
+  "mode": "live",
+  "model": "qwen3.8-max",
+  "generated_at": "2026-11-10T16:10:10.644587+00:00",
+  "max_steps_per_item": 12,
+  "decision_evidence": "live_provider_run",
+  "items": [
+    {
+      "material_id": "M02",
+      "status": "needs_information",
+      "review_status": "needs_information",
+      "risk_reasons": [],
+      "missing_fields": [
+        "owner"
+      ],
+      "requested_slot": "2026-11-11T19:00:00+08:00",
+      "suggested_slot": null,
+      "pending_confirmations": [
+        "补充字段：owner"
+      ],
+      "save_status": "not_attempted",
+      "save_error": null,
+      "draft_id": null,
+      "duplicate": false,
+      "published": false,
+      "draft_updated": false,
+      "termination": "finished",
+      "steps": 2
+    }
+  ],
+  "trace": [
+    {
+      "material_id": "M02",
+      "steps": [
+        {
+          "step": 1,
+          "action": "read_material",
+          "arguments": {},
+          "basis": "Material has not been read",
+          "observation": {
+            "ok": true,
+            "material": {
+              "title": "待补授权信息",
+              "tags": []
+            },
+            "missing": [
+              "owner"
+            ]
+          },
+          "next_action": "finish"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "arguments": {},
+          "basis": "Material is missing required owner metadata",
+          "observation": {
+            "finished": true
+          },
+          "next_action": null
+        }
+      ]
+    }
+  ]
+}

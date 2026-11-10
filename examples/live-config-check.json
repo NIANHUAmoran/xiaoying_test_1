@@ -1,0 +1,5 @@
+{
+  "exit_code": 2,
+  "live_run_performed": false,
+  "reason": "No LLM configuration supplied; live decision quality is unverified."
+}

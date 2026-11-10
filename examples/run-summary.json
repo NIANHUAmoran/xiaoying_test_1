@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "normal",
+    "exit_code": 0,
+    "status": "draft_saved",
+    "mode": "mock"
+  },
+  {
+    "scenario": "duplicate",
+    "exit_code": 0,
+    "draft_count": 1,
+    "mode": "mock"
+  },
+  {
+    "scenario": "conflict",
+    "exit_code": 0,
+    "status": "needs_confirmation",
+    "mode": "mock"
+  },
+  {
+    "scenario": "missing",
+    "exit_code": 0,
+    "status": "needs_information",
+    "mode": "mock"
+  },
+  {
+    "scenario": "risk",
+    "exit_code": 0,
+    "status": "blocked",
+    "mode": "mock"
+  },
+  {
+    "scenario": "save-failure",
+    "exit_code": 1,
+    "status": "failed",
+    "mode": "mock"
+  }
+]

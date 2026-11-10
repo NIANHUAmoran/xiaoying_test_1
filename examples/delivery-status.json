@@ -1,0 +1,18 @@
+{
+  "scope": "Initial AI implementation and offline verification window; excludes earlier planning, later configuration waiting and live model verification",
+  "started_at_utc": "2026-11-10T15:39:24.417389+00:00",
+  "recorded_at_utc": "2026-11-10T15:54:24.445055+00:00",
+  "elapsed_minutes_approx": 15.0,
+  "python": "3.12.3",
+  "tests_passed": 31,
+  "tests_failed": 0,
+  "live_model_run_performed": true,
+  "github_remote_configured": false,
+  "live_model": "qwen3.8-max",
+  "live_scenarios_passed": [
+    "normal",
+    "conflict",
+    "missing"
+  ],
+  "live_validation_completed_at": "2026-11-11T00:11:46.580391+08:00"
+}

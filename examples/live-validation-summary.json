@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-11T00:11:46.580391+08:00",
+  "checks": [
+    {
+      "scenario": "normal",
+      "model": "qwen3.8-max",
+      "mode": "live",
+      "status": "draft_saved",
+      "save_status": "saved",
+      "actions": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "draft_count": 1,
+      "database_consistent": true,
+      "confirmed": true,
+      "output": "live-normal.output.json"
+    },
+    {
+      "scenario": "conflict",
+      "model": "qwen3.8-max",
+      "mode": "live",
+      "status": "needs_confirmation",
+      "save_status": "saved",
+      "actions": [
+        "read_material",
+        "check_rules",
+        "query_slots",
+        "save_draft",
+        "finish"
+      ],
+      "draft_count": 1,
+      "database_consistent": true,
+      "confirmed": false,
+      "output": "live-conflict.output.json"
+    },
+    {
+      "scenario": "missing",
+      "model": "qwen3.8-max",
+      "mode": "live",
+      "status": "needs_information",
+      "save_status": "not_attempted",
+      "actions": [
+        "read_material",
+        "finish"
+      ],
+      "draft_count": 0,
+      "database_consistent": true,
+      "confirmed": null,
+      "output": "live-missing.output.json"
+    }
+  ],
+  "all_passed": true,
+  "scope": "Three observed live runs; not a guarantee of future model reliability."
+}

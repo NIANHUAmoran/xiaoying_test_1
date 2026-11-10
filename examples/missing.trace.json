@@ -1,0 +1,41 @@
+{
+  "source_output": "missing.output.json",
+  "request_id": "missing-001",
+  "mode": "mock",
+  "model": "offline-mock",
+  "generated_at": "2026-11-10T16:29:40.542842+00:00",
+  "trace": [
+    {
+      "material_id": "M02",
+      "steps": [
+        {
+          "step": 1,
+          "action": "read_material",
+          "arguments": {},
+          "basis": "先读取素材",
+          "observation": {
+            "ok": true,
+            "material": {
+              "title": "待补授权信息",
+              "tags": []
+            },
+            "missing": [
+              "owner"
+            ]
+          },
+          "next_action": "finish"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "arguments": {},
+          "basis": "素材缺失或关键字段不全，待补充",
+          "observation": {
+            "finished": true
+          },
+          "next_action": null
+        }
+      ]
+    }
+  ]
+}

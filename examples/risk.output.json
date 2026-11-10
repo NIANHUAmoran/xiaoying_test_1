@@ -1,0 +1,79 @@
+{
+  "request_id": "risk-001",
+  "mode": "mock",
+  "model": "offline-mock",
+  "generated_at": "2026-11-10T16:29:40.694382+00:00",
+  "max_steps_per_item": 12,
+  "decision_evidence": "offline_mock_not_model_evidence",
+  "items": [
+    {
+      "material_id": "M03",
+      "status": "blocked",
+      "review_status": "blocked",
+      "risk_reasons": [
+        "blocked_tag:copyright"
+      ],
+      "missing_fields": [],
+      "requested_slot": "2026-11-11T19:00:00+08:00",
+      "suggested_slot": null,
+      "pending_confirmations": [],
+      "save_status": "not_attempted",
+      "save_error": null,
+      "draft_id": null,
+      "duplicate": false,
+      "published": false,
+      "draft_updated": false,
+      "termination": "finished",
+      "steps": 3
+    }
+  ],
+  "trace": [
+    {
+      "material_id": "M03",
+      "steps": [
+        {
+          "step": 1,
+          "action": "read_material",
+          "arguments": {},
+          "basis": "先读取素材",
+          "observation": {
+            "ok": true,
+            "material": {
+              "title": "存在版权风险的素材",
+              "owner": "content-team",
+              "tags": [
+                "copyright"
+              ]
+            },
+            "missing": []
+          },
+          "next_action": "check_rules"
+        },
+        {
+          "step": 2,
+          "action": "check_rules",
+          "arguments": {},
+          "basis": "素材完整，检查审核规则",
+          "observation": {
+            "ok": true,
+            "risks": [
+              "blocked_tag:copyright"
+            ],
+            "passed": false
+          },
+          "next_action": "finish"
+        },
+        {
+          "step": 3,
+          "action": "finish",
+          "arguments": {},
+          "basis": "审核未通过，阻断排期",
+          "observation": {
+            "finished": true
+          },
+          "next_action": null
+        }
+      ]
+    }
+  ]
+}

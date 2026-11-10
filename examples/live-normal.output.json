@@ -1,0 +1,117 @@
+{
+  "request_id": "normal-001",
+  "mode": "live",
+  "model": "qwen3.8-max",
+  "generated_at": "2026-11-10T16:04:34.439890+00:00",
+  "max_steps_per_item": 12,
+  "decision_evidence": "live_provider_run",
+  "items": [
+    {
+      "material_id": "M01",
+      "status": "draft_saved",
+      "review_status": "passed",
+      "risk_reasons": [],
+      "missing_fields": [],
+      "requested_slot": "2026-11-11T19:00:00+08:00",
+      "suggested_slot": "2026-11-11T19:00:00+08:00",
+      "pending_confirmations": [],
+      "save_status": "saved",
+      "save_error": null,
+      "draft_id": "draft-23dd89713a72395865f7",
+      "duplicate": false,
+      "published": false,
+      "draft_updated": false,
+      "termination": "finished",
+      "steps": 5
+    }
+  ],
+  "trace": [
+    {
+      "material_id": "M01",
+      "steps": [
+        {
+          "step": 1,
+          "action": "read_material",
+          "arguments": {},
+          "basis": "Material M01 has not yet been inspected.",
+          "observation": {
+            "ok": true,
+            "material": {
+              "title": "新品剪辑",
+              "owner": "content-team",
+              "tags": []
+            },
+            "missing": []
+          },
+          "next_action": "check_rules"
+        },
+        {
+          "step": 2,
+          "action": "check_rules",
+          "arguments": {},
+          "basis": "material read successfully with no missing metadata",
+          "observation": {
+            "ok": true,
+            "risks": [],
+            "passed": true
+          },
+          "next_action": "query_slots"
+        },
+        {
+          "step": 3,
+          "action": "query_slots",
+          "arguments": {},
+          "basis": "Material and rules passed; need availability before saving.",
+          "observation": {
+            "ok": true,
+            "slots": [
+              {
+                "slot": "2026-11-11T18:00:00+08:00",
+                "available": false
+              },
+              {
+                "slot": "2026-11-11T19:00:00+08:00",
+                "available": true
+              },
+              {
+                "slot": "2026-11-11T20:00:00+08:00",
+                "available": true
+              }
+            ]
+          },
+          "next_action": "save_draft"
+        },
+        {
+          "step": 4,
+          "action": "save_draft",
+          "arguments": {
+            "slot": "2026-11-11T19:00:00+08:00"
+          },
+          "basis": "Requested slot is available and all checks passed",
+          "observation": {
+            "ok": true,
+            "duplicate": false,
+            "updated": false,
+            "draft_id": "draft-23dd89713a72395865f7",
+            "material_id": "M01",
+            "requested_slot": "2026-11-11T19:00:00+08:00",
+            "suggested_slot": "2026-11-11T19:00:00+08:00",
+            "confirmed": true,
+            "published": false
+          },
+          "next_action": "finish"
+        },
+        {
+          "step": 5,
+          "action": "finish",
+          "arguments": {},
+          "basis": "Draft saved successfully",
+          "observation": {
+            "finished": true
+          },
+          "next_action": null
+        }
+      ]
+    }
+  ]
+}

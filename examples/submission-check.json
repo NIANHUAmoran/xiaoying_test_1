@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-11-11T00:29:57.315466+08:00",
+  "all_passed": true,
+  "root_entries": [
+    ".env.example",
+    ".gitignore",
+    "README.md",
+    "data",
+    "docs",
+    "examples",
+    "requirements.txt",
+    "src",
+    "tests"
+  ],
+  "required_documents": [
+    "01-requirements.md",
+    "02-solution.md",
+    "03-evaluation.md",
+    "04-ai-usage.md",
+    "05-retrospective.md"
+  ],
+  "six_required_cases": [
+    "normal",
+    "missing",
+    "risk",
+    "conflict",
+    "duplicate",
+    "save-failure"
+  ],
+  "evidence_groups_checked": 13,
+  "trace_matches_actual_output": true,
+  "document_links_valid": true,
+  "unit_tests_passed": 31,
+  "live_paths": [
+    "live-normal",
+    "live-conflict",
+    "live-missing"
+  ]
+}

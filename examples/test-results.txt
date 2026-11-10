@@ -1,0 +1,36 @@
+test_changed_occupancy_updates_same_draft_not_original_requirement (test_agent.AgentTests.test_changed_occupancy_updates_same_draft_not_original_requirement) ... ok
+test_conflict_keeps_original_time_and_requires_confirmation (test_agent.AgentTests.test_conflict_keeps_original_time_and_requires_confirmation) ... ok
+test_duplicate_survives_reopen_and_creates_one_draft (test_agent.AgentTests.test_duplicate_survives_reopen_and_creates_one_draft) ... ok
+test_explicit_user_consent_can_confirm_alternative (test_agent.AgentTests.test_explicit_user_consent_can_confirm_alternative) ... ok
+test_finish_after_conflict_without_a_proposal_is_incomplete (test_agent.AgentTests.test_finish_after_conflict_without_a_proposal_is_incomplete) ... ok
+test_flexible_time_allows_automatic_alternative (test_agent.AgentTests.test_flexible_time_allows_automatic_alternative) ... ok
+test_invalid_model_response_diagnostics_record_shape_not_private_values (test_agent.AgentTests.test_invalid_model_response_diagnostics_record_shape_not_private_values) ... ok
+test_limit_after_save_preserves_truth_about_written_draft (test_agent.AgentTests.test_limit_after_save_preserves_truth_about_written_draft) ... ok
+test_missing_metadata_stops_without_writes (test_agent.AgentTests.test_missing_metadata_stops_without_writes) ... ok
+test_model_cannot_bypass_risk_gate (test_agent.AgentTests.test_model_cannot_bypass_risk_gate) ... ok
+test_multiple_materials_do_not_get_same_confirmed_slot (test_agent.AgentTests.test_multiple_materials_do_not_get_same_confirmed_slot) ... ok
+test_new_schedule_snapshot_can_free_previously_occupied_slot (test_agent.AgentTests.test_new_schedule_snapshot_can_free_previously_occupied_slot) ... ok
+test_no_available_slot_does_not_create_draft (test_agent.AgentTests.test_no_available_slot_does_not_create_draft) ... ok
+test_normal_persists_confirmed_draft_and_never_publishes (test_agent.AgentTests.test_normal_persists_confirmed_draft_and_never_publishes) ... ok
+test_pending_drafts_also_reserve_distinct_slots (test_agent.AgentTests.test_pending_drafts_also_reserve_distinct_slots) ... ok
+test_premature_finish_cannot_claim_completion (test_agent.AgentTests.test_premature_finish_cannot_claim_completion) ... ok
+test_publish_or_extra_tool_parameters_are_rejected (test_agent.AgentTests.test_publish_or_extra_tool_parameters_are_rejected) ... ok
+test_race_after_query_is_rechecked_at_save (test_agent.AgentTests.test_race_after_query_is_rechecked_at_save) ... ok
+test_risk_blocks_saving (test_agent.AgentTests.test_risk_blocks_saving) ... ok
+test_same_request_id_with_changed_payload_is_rejected (test_agent.AgentTests.test_same_request_id_with_changed_payload_is_rejected) ... ok
+test_save_failure_is_not_reported_as_success (test_agent.AgentTests.test_save_failure_is_not_reported_as_success) ... ok
+test_sqlite_write_error_rolls_back_and_is_reported (test_agent.AgentTests.test_sqlite_write_error_rolls_back_and_is_reported) ... ok
+test_step_limit_returns_incomplete (test_agent.AgentTests.test_step_limit_returns_incomplete) ... ok
+test_time_requires_timezone_and_duplicate_material_is_invalid (test_agent.AgentTests.test_time_requires_timezone_and_duplicate_material_is_invalid) ... ok
+test_two_connections_cannot_confirm_same_slot (test_agent.AgentTests.test_two_connections_cannot_confirm_same_slot) ... ok
+test_unknown_material_is_not_invented (test_agent.AgentTests.test_unknown_material_is_not_invented) ... ok
+test_untrusted_material_cannot_grant_confirmation (test_agent.AgentTests.test_untrusted_material_cannot_grant_confirmation) ... ok
+test_user_can_confirm_existing_draft_without_creating_another (test_agent.AgentTests.test_user_can_confirm_existing_draft_without_creating_another) ... ok
+test_http_adapter_decodes_action_and_does_not_include_secret_in_prompt (test_agent.HTTPAdapterTests.test_http_adapter_decodes_action_and_does_not_include_secret_in_prompt) ... ok
+test_file_loads_known_keys_preserves_equals_and_shell_precedence (test_config.ConfigTests.test_file_loads_known_keys_preserves_equals_and_shell_precedence) ... ok
+test_malformed_file_error_does_not_expose_secret (test_config.ConfigTests.test_malformed_file_error_does_not_expose_secret) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.711s
+
+OK
